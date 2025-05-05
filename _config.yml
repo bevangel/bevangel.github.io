@@ -1,0 +1,37 @@
+title: Barbara Evangelista
+description: Personal blog about software, books, and life
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  software:
+    output: true
+  books:
+    output: true
+  life:
+    output: true
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "software"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "life"
+    values:
+      layout: "post" 
